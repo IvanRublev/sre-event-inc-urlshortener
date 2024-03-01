@@ -25,7 +25,7 @@ defmodule KetbinWeb.UserConfirmationController do
     |> redirect(to: "/")
   end
 
-  # Do not log in the user after confirmation to avoid a
+  # Do not sign in the user after confirmation to avoid a
   # leaked token giving the user access to the account.
   def confirm(conn, %{"token" => token}) do
     case Accounts.confirm_user(token) do
