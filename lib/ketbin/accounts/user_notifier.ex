@@ -16,7 +16,8 @@ defmodule Ketbin.Accounts.UserNotifier do
       |> from({"Katbin", "noreply@katb.in"})
       |> subject(subject)
       |> text_body(body)
-      #|> Ketbin.Mailer.deliver()
+
+      # |> Ketbin.Mailer.deliver()
     end)
 
     {:ok, %{to: to, body: body}}

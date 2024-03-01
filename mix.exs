@@ -54,7 +54,7 @@ defmodule Ketbin.MixProject do
       {:swoosh, "~> 1.5"},
       {:gen_smtp, "~> 1.1"},
       {:earmark, "~> 1.4"},
-      {:mix_test_watch, "~> 1.0", only: :test, runtime: false},
+      {:mix_test_watch, "~> 1.0", only: :test, runtime: false}
     ]
   end
 
