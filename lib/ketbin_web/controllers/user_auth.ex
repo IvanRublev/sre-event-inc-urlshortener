@@ -48,7 +48,7 @@ defmodule KetbinWeb.UserAuth do
 
   # This function renews the session ID and erases the whole
   # session to avoid fixation attacks. If there is any data
-  # in the session you may want to preserve after log in/log out,
+  # in the session you may want to preserve after sign in/log out,
   # you must explicitly fetch the session data before clearing
   # and then immediately set it after clearing, for example:
   #
@@ -162,7 +162,7 @@ defmodule KetbinWeb.UserAuth do
       conn
     else
       conn
-      |> put_flash(:error, "You must log in to access this page.")
+      |> put_flash(:error, "You must sign in to access this page.")
       |> maybe_store_return_to()
       |> redirect(to: Routes.user_session_path(conn, :new))
       |> halt()

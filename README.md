@@ -14,7 +14,7 @@ Internet users authenticated at the website.
 
 ## Core Functions
 
-* Sign Up and Sign In a user by email and password
+* Register and Sign In a user by email and password
 * Accepts an URL (f.e. https://google.com) from an authenticated (signed in) user and returns a shortened version that looks like https://sre-event-inc-urlshortener.fly.dev/elevenlettercode
 * Redirects to the URL with the shortened version for non-authenticated users
 * Supports editing the shortened URL with https://sre-event-inc-urlshortener.fly.dev/edit/elevenlettercode for authenticated users
@@ -56,7 +56,7 @@ Main webserver Routes:
 
 | Method | Path | Purpose | Authorization? |
 | ------ | ---- | ------- | -------------- |
-| GET | /    | Home page, to Sign Up or Sign In | No |
+| GET | /    | Home page, to Register or Sign In | No |
 | GET | /elevenlettercode/raw | Shows the full URL | No |
 | GET | /v/elevenlettercode | Shows the shortened URL | No |
 | GET | /elevenlettercode | Redirects to the full URL | No |
