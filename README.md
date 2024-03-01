@@ -54,7 +54,7 @@ Internet users authenticated at the website.
 
 Main webserver Routes:
 
-| Method | Path | Purpose | Authorization? |
+| Method | Path | Purpose | Authentication? |
 | ------ | ---- | ------- | -------------- |
 | GET | /    | Home page, to Register or Sign In | No |
 | GET | /elevenlettercode/raw | Shows the full URL | No |
